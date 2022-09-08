@@ -1,2 +1,0 @@
-#!/bin/bash
-gcc -c >n{CFILE::-2}O 
