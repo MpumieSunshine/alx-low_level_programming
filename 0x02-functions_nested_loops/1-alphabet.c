@@ -1,45 +1,32 @@
-vi 0-putchar.c
-
 #include "main.h"
-
-#include <string.h>
-
-
 
 /**
 
- * main - Entry point
+ * print_alphabet - function to print abc
 
  *
 
- * Description: prints _putchar using putchar prototype
+ * Return: 0
 
- *
+ */
 
- * Return: Always 0 (Success)
-
-*/
-
-
-
-int main(void)
+void print_alphabet(void)
 
 {
 
-	char str[] = "_putchar";
-
-	int ch;
+	char c;
 
 
 
-	for (ch = 0; ch < 8; ++ch)
+	for (c = 'a'; c <= 'z'; c++)
 
-		_putchar(str[ch]);
+	{
 
-	_putchar('\n');
+		_putchar(c);
 
+	}
 
-
-	return (0);
+_putchar('\n');
 
 }
+
