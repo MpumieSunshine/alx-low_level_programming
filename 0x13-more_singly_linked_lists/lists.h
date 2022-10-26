@@ -1,17 +1,15 @@
-#ifndef LISTS_H
-#define LISTS_H
+#ifndef _LISTS_H_
+#define _LISTS_H_
 
-#include <stdlib.h>
-
+#include <stddef.h>
 /**
  * struct listint_s - singly linked list
  * @n: integer
  * @next: points to the next node
  *
  * Description: singly linked list node structure
- * for project
+ * for ALX project
  */
-
 typedef struct listint_s
 {
 	int n;
@@ -34,5 +32,5 @@ size_t print_listint_safe(const listint_t *head);
 size_t free_listint_safe(listint_t **h);
 listint_t *find_listint_loop(listint_t *head);
 
-#endif /* LISTS_H */
+#endif /* _LISTS_H_ */
 
